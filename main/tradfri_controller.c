@@ -2,10 +2,14 @@
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
 
-#include "esp_log.h"
+//#include "fried_esp_cyd_screen.h"
 
+#include "esp_log.h"
 #include "fried_tradfri_client.h"
 #include "fdata.h"
+
+static const char* TRADFRI_TAG = "FRIED_TRADFRI_CONTROLLER";
+
 
 static void CycleColorsXY(const char* deviceId)
 {
@@ -28,7 +32,10 @@ static void CycleColorsXY(const char* deviceId)
         }
     }
 }
-
+//
+//void my_button_cb(lv_event_t* e) {
+//    printf("Button clicked!\n");
+//}
 
 static void controller_main(void *p)
 {
@@ -42,12 +49,18 @@ static void controller_main(void *p)
     vTaskDelay(pdMS_TO_TICKS(1000));
     CycleColorsXY(deviceId);
 
-    ESP_LOGI(TAG, "Finished");
+
+    ESP_LOGI(TRADFRI_TAG, "Finished");
     vTaskDelete(NULL);
 }
 
 void app_main(void)
 {
+    //fried_screen_init();
+
+    //// Create a button at (50,50) size 120x50
+    //fried_screen_create_button(50, 50, 120, 50, "Press me", my_button_cb);
+
     tradfri_init("192.168.2.9", "tradfri_12345", "IaY5AQRXw1awfqEt");
 
     xTaskCreate(controller_main, "controller", 8 * 1024, NULL, 5, NULL);
