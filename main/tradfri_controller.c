@@ -4,10 +4,6 @@
 
 #include "esp_log.h"
 
-
-#define FRIED_TRADFRI_GATEWAY_IP "192.168.2.9"
-#define FRIED_TRADFRI_IDENTITY "tradfri_12345"
-#define FRIED_TRADFRI_KEY "IaY5AQRXw1awfqEt"
 #include "fried_tradfri_client.h"
 #include "fdata.h"
 
@@ -52,7 +48,7 @@ static void controller_main(void *p)
 
 void app_main(void)
 {
-    tradfri_init();
+    tradfri_init("192.168.2.9", "tradfri_12345", "IaY5AQRXw1awfqEt");
 
     xTaskCreate(controller_main, "controller", 8 * 1024, NULL, 5, NULL);
 }
