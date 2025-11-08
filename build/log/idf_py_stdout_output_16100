@@ -1,0 +1,22 @@
+Command: ninja all
+[1/13] Building C object esp-idf/fried_tradfri_client/CMakeFiles/__idf_fried_tradfri_client.dir/src/fried_tradfri_client.c.obj
+[2/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/tradfri_controller.c.obj
+[3/13] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\marti\Documents\esp-projects\tradfri_controller\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/marti/Documents/esp-projects/tradfri_controller/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[4/13] No install step for 'bootloader'
+[5/13] Completed 'bootloader'
+[6/13] Building C object esp-idf/fried_coaps_client/CMakeFiles/__idf_fried_coaps_client.dir/src/fried_coaps_client.c.obj
+[7/13] Linking C static library esp-idf\fried_coaps_client\libfried_coaps_client.a
+[8/13] Linking C static library esp-idf\fried_tradfri_client\libfried_tradfri_client.a
+[9/13] Linking C static library esp-idf\main\libmain.a
+[10/13] Generating esp-idf/esp_system/ld/sections.ld
+[11/13] Linking CXX executable tradfri_controller.elf
+[12/13] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/marti/Documents/esp-projects/tradfri_controller/build/tradfri_controller.bin
+[13/13] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\marti\Documents\esp-projects\tradfri_controller\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/marti/Documents/esp-projects/tradfri_controller/build/partition_table/partition-table.bin C:/Users/marti/Documents/esp-projects/tradfri_controller/build/tradfri_controller.bin"
+tradfri_controller.bin binary size 0xe85e0 bytes. Smallest app partition is 0x100000 bytes. 0x17a20 bytes (9%) free.

@@ -1,0 +1,118 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\marti\Documents\esp-projects\tradfri_controller\build\tradfri_controller.elf C:\Users\marti\Documents\esp-projects\tradfri_controller\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov  8 2025 13:34:18[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1eb90h (125840) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=0002ebb8 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002ebe0 vaddr=3ffb0000 size=01438h (  5176) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=ad8c8h (710856) map[0m
+[0;32mI (385) esp_image: segment 4: paddr=000dd8f0 vaddr=3ffb1438 size=02e4ch ( 11852) load[0m
+[0;32mI (390) esp_image: segment 5: paddr=000e0744 vaddr=40080000 size=17e74h ( 97908) load[0m
+[0;32mI (440) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (440) boot: Disabling RNG early entropy source...[0m
+[0;32mI (450) cpu_start: Multicore app[0m
+[0;32mI (459) cpu_start: Pro cpu start user code[0m
+[0;32mI (459) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (459) app_init: Application information:[0m
+[0;32mI (462) app_init: Project name:     tradfri_controller[0m
+[0;32mI (467) app_init: App version:      d577edb-dirty[0m
+[0;32mI (473) app_init: Compile time:     Nov  8 2025 13:34:08[0m
+[0;32mI (479) app_init: ELF file SHA256:  b8aa985fe3ab45d7...[0m
+[0;32mI (485) app_init: ESP-IDF:          v5.5[0m
+[0;32mI (489) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (494) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (499) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (504) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (511) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (517) heap_init: At 3FFBB5B8 len 00024A48 (146 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (530) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 40097E74 len 0000818C (32 KiB): IRAM[0m
+[0;32mI (544) spi_flash: detected chip: generic[0m
+[0;32mI (547) spi_flash: flash io: dio[0m
+[0;33mW (551) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (565) main_task: Started on CPU0[0m
+[0;32mI (575) main_task: Calling app_main()[0m
+[0;32mI (605) example_connect: Start example_connect.[0m
+[0;32mI (615) wifi:wifi driver task: 3ffc331c, prio:23, stack:6656, core=0[0m
+[0;32mI (625) wifi:wifi firmware version: f3dbad7[0m
+[0;32mI (635) wifi:wifi certification version: v7.0[0m
+[0;32mI (635) wifi:config NVS flash: enabled[0m
+[0;32mI (635) wifi:config nano formatting: disabled[0m
+[0;32mI (635) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (635) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (645) wifi:Init management short buffer num: 32[0m
+[0;32mI (645) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (655) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (655) wifi:Init static rx buffer num: 10[0m
+[0;32mI (665) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (665) wifi_init: rx ba win: 6[0m
+[0;32mI (665) wifi_init: accept mbox: 6[0m
+[0;32mI (675) wifi_init: tcpip mbox: 32[0m
+[0;32mI (675) wifi_init: udp mbox: 6[0m
+[0;32mI (675) wifi_init: tcp mbox: 6[0m
+[0;32mI (685) wifi_init: tcp tx win: 5744[0m
+[0;32mI (685) wifi_init: tcp rx win: 5744[0m
+[0;32mI (695) wifi_init: tcp mss: 1440[0m
+[0;32mI (695) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (695) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (705) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (795) wifi:mode : sta (78:1c:3c:2b:88:68)[0m
+[0;32mI (795) wifi:enable tsf[0m
+[0;32mI (805) example_connect: Connecting to OvdKraats...[0m
+[0;33mW (805) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (805) example_connect: Waiting for IP(s)[0m
+[0;32mI (3225) wifi:new:<4,0>, old:<1,0>, ap:<255,255>, sta:<4,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3225) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3225) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3235) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3265) wifi:connected with OvdKraats, aid = 3, channel 4, BW20, bssid = 2e:80:88:f9:c7:8b[0m
+[0;32mI (3265) wifi:security: WPA2-PSK, phy: bgn, rssi: -72[0m
+[0;32mI (3265) wifi:pm start, type: 1[0m
+
+[0;32mI (3305) wifi:<ba-add>idx:0 (ifx:0, 2e:80:88:f9:c7:8b), tid:6, ssn:2, winSize:64[0m
+[0;32mI (3435) wifi:AP's beacon interval = 204800 us, DTIM period = 4[0m
+[0;32mI (4315) esp_netif_handlers: example_netif_sta ip: 192.168.2.64, mask: 255.255.255.0, gw: 192.168.2.254[0m
+[0;32mI (4315) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.2.64[0m
+[0;32mI (4605) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:7a1c:3cff:fe2b:8868, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4605) example_common: Connected to example_netif_sta[0m
+[0;32mI (4615) example_common: - IPv4 address: 192.168.2.64,[0m
+[0;32mI (4615) example_common: - IPv6 address: fe80:0000:0000:0000:7a1c:3cff:fe2b:8868, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4625) CoAPs_init: Network stack initialized, ready for CoAP![0m
+coaps://192.168.2.9:5684/15001/65574
+[0;32mI (4645) CoAPs_client: Parsed IPv4 address: 192.168.2.9[0m
+[0;32mI (4655) main_task: Returned from app_main()[0m
+[0;32mI (4735) wifi:<ba-add>idx:1 (ifx:0, 2e:80:88:f9:c7:8b), tid:0, ssn:2, winSize:64[0m
+info :
+{"9001":"Martijn Hoofdlamp","9003":65574,"9002":1614889729,"9020":1762606098,"9054":0,"9019":1,"3":{"0":"IKEA of Sweden","1":"TRADFRI bulb E27 CWS opal 600lm","2":"","3":"2.3.093","6":1,"7":10243,"8":3},"5750":2,"3311":[{"5850":1,"5849":4,"5851":254,"5707":39551,"5708":65279,"5709":9830,"5710":6554,"5706":"005dff","9003":0}]}
+coaps://192.168.2.9:5684/15001/65574
+data: {"3311":[{"5709":45860,"5710":19660,"5712":25}]}
+[0;32mI (6835) CoAPs_client: Parsed IPv4 address: 192.168.2.9[0m
+Set XY to 45860 19660
+[0;32mI (8605) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fde9:6066:2642:a3fb:7a1c:3cff:fe2b:8868, type: ESP_IP6_ADDR_IS_UNIQUE_LOCAL[0m
+coaps://192.168.2.9:5684/15001/65574
+data: {"3311":[{"5709":19660,"5710":39321,"5712":25}]}
+[0;32mI (10905) CoAPs_client: Parsed IPv4 address: 192.168.2.9[0m
+Set XY to 19660 39321
