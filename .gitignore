@@ -1,1 +1,5 @@
 update.bat
+managed_components
+build
+managed_components/*
+build/*

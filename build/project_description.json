@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "tradfri_controller",
-    "project_version":    "be08d37-dirty",
+    "project_version":    "7a701f5-dirty",
     "project_path":       "C:/Users/marti/Documents/esp-projects/tradfri_controller",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.5",
     "build_dir":          "C:/Users/marti/Documents/esp-projects/tradfri_controller/build",

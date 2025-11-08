@@ -1,1 +1,5 @@
-be08d37031c030035fba51d8d2e1b360c627d87f
+0000000000000000000000000000000000000000 0e1dfdddd81d5533d3a29a2eee6a5c436573ce69 FriedMonkey <120042050+Friedmonkey@users.noreply.github.com> 1762466700 +0100	commit (initial): Initial commit from fried_git.bat (added .gitignore)
+0e1dfdddd81d5533d3a29a2eee6a5c436573ce69 d577edba3e5a5b14dc11370c552a3cb0a9675ca3 FriedMonkey <120042050+Friedmonkey@users.noreply.github.com> 1762467107 +0100	commit: added readme
+d577edba3e5a5b14dc11370c552a3cb0a9675ca3 61b91c15af634904538a8f6e6cd4901546397dc0 FriedMonkey <120042050+Friedmonkey@users.noreply.github.com> 1762606417 +0100	commit: use fried tradfri client as library
+61b91c15af634904538a8f6e6cd4901546397dc0 be08d37031c030035fba51d8d2e1b360c627d87f FriedMonkey <120042050+Friedmonkey@users.noreply.github.com> 1762607792 +0100	commit: using varibles instead of defines for the config
+be08d37031c030035fba51d8d2e1b360c627d87f 7a701f55c7cf1e9b2c262f6ff321685a52e1ec26 FriedMonkey <120042050+Friedmonkey@users.noreply.github.com> 1762610926 +0100	commit: moved dependencies yaml and changed tag
